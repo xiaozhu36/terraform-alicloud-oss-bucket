@@ -1,8 +1,8 @@
-provider "alicloud" {
-  version              = ">=1.56.0"
-  region               = var.region != "" ? var.region : null
-  configuration_source = "xiaozhu36/oss-bucket"
-}
+# provider "alicloud" {
+#   version              = ">=1.56.0"
+#   region               = var.region != "" ? var.region : null
+#   configuration_source = "xiaozhu36/oss-bucket"
+# }
 
 resource "alicloud_oss_bucket" "create_new_bucket" {
   bucket = var.bucket_name
